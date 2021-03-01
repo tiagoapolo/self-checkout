@@ -25,6 +25,10 @@
 
 `npm run dev` or `yarn dev`
 
+5. Configure API base URL:
+    - You can either use `src/config.json` or `.env`
+    - Also there's a `.env_example` file if you want to use as template
+
 - If you want to run the client app separately use:
 
 `npm start` or `yarn start`
