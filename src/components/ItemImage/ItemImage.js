@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-const baseUrl = process.env.REACT_APP_SERVER_URL;
+import config from '../../config.json';
+
+const baseUrl = process.env.REACT_APP_SERVER_URL || config.baseUrl;;
 
 const StyledImage = styled.img`
   width: 100%;

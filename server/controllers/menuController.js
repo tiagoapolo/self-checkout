@@ -7,23 +7,28 @@ const getMenuHandler = (req, res, next) => {
     const { id } = req.params;
 
     if (id) {      
-      return res.send(fetchMenuItems({ id, order }));
+      res.send(fetchMenuItems({ id, order }));
+      next();
     }
 
     if (name || category) {
-      return res.send(fetchMenuItems({ category, name, order }));
+      res.send(fetchMenuItems({ category, name, order }));
+      next();
     }
 
     res.send(fetchMenuItems({ order }));
+    next();
 
   } catch(error) {
-    res.sendStatus(500) && next(error)
+    res.sendStatus(500) && next(error);
+    next();
   }
 }
 
 const getCategoriesHandler = (_, res, next) => {
   try {
     res.send(fetchCategories({}));
+    next();
   } catch(error) {
     res.sendStatus(500) && next(error)
   }
