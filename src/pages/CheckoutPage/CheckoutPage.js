@@ -136,7 +136,7 @@ function CheckoutPage() {
       try {
 
         await validatePaymentSolution();      
-        const orderResponse = await api.post('/order', { items: values.selectedItems });
+        const orderResponse = await api.post('/order', { items: values.selectedItems, status: 'open' });
         setOrderInfo(orderResponse.data.id);
         setCheckoutState(checkoutStates[2]);
         
