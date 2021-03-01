@@ -37,7 +37,7 @@
   - Create a order and returns the created order with the total amount and generated order id
 
 - PUT `/order/<ID>`:
-  - Updates a single order
+  - Updates items and/or status of a single order
 
 - GET `/menu/categories>`:
   - Returns all categories
