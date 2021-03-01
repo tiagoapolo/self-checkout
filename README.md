@@ -24,3 +24,32 @@
 - If you want to run the server separately use:
 
 `npm run server` or `yarn server`
+
+## API Routes
+
+- GET `/order`:
+  - Returns all orders with 
+
+- GET `/order/<ID>`:
+  - Returns a single order
+
+- POST `/order`:
+  - Create a order and returns the created order with the total amount and generated order id
+
+- PUT `/order/<ID>`:
+  - Updates a single order
+
+- GET `/menu/categories>`:
+  - Returns all categories
+
+- GET `/menu`:
+  - Returns all categories
+
+- GET `/menu?name=`:
+  - Queries for all menu items with matching name
+
+- GET `/menu?category=`:
+  - Queries for all menu items with matching category
+
+- GET `/menu/<ID>`:
+  - Returns a single menu item
