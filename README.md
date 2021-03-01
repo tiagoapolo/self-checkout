@@ -13,11 +13,15 @@
 - Make sure you have Node installed
 - Both Yarn and NPM can be used as package managers
 
-1. First install the required packages: 
+1. Clone the repo
+
+2. go to self-checkout folder: `cd self-checkout/`
+
+3. First install the required packages: 
 
 `npm install` or `yarn`
 
-2. To run both client and server applications use:
+4. To run both client and server applications use:
 
 `npm run dev` or `yarn dev`
 
